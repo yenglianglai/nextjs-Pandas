@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@media screen and (max-width: 800px) {
+    .entranceBanner {
+        font-size: 10px;
+    }
+}
+
+body {
+    background: #202124;
+}
+
 .entranceButton {
     transform: scale(1);
     background: #dee8fa;
@@ -9,14 +19,14 @@
 .entranceButton:hover {
     cursor: pointer;
     transform: scale(1.1);
-    filter: brightness(110%);
+    filter: brightness(120%);
     background: #dee8fa;
-    border: 2px solid #03fc3d;
+    border: 2px solid #bae6fd;
 }
 
 .entranceBanner {
     width: 100%;
-    height: 20%;
+    height: 15%;
     background: #dee8fa;
     font-family: "Open Sans";
     font-style: normal;
@@ -24,10 +34,4 @@
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-}
-
-@media screen and (max-width: 599px) {
-    .entranceBanner {
-        font-size: 2px;
-    }
 }
